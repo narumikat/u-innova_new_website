@@ -1,0 +1,33 @@
+.footer {
+  padding-top: 6.5rem;
+  padding-bottom: 1.5rem;
+  border-top: 1px solid #51515e;
+
+  h6 {
+    margin-bottom: 0.625rem;
+    color: #b6b6b6;
+  }
+
+  p, a, ul {
+    color: $p-color;
+    font-size: 14px;
+  }
+
+  svg {
+    color: $p-color;
+  }
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-size: 12px;
+  }
+
+  a {
+    color: $p-color;
+  }
+}

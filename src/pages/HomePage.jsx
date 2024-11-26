@@ -5,6 +5,7 @@ import GridFeatures from "../components/GridFeatures.jsx";
 import MissionBlock from "../components/MissionBlock.jsx";
 import CustomSwiper from "../components/CustomSwiper.jsx";
 import AboutCards from "../components/AboutCard.jsx";
+import Footer from "../components/Footer.jsx"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const HomePage = () => {
@@ -35,6 +36,7 @@ const HomePage = () => {
                 <h2 className="gradient-font2 mt-5">Who We Are</h2>
             </div>
             < AboutCards/>
+            < Footer/>
         </div>
     );
 };
