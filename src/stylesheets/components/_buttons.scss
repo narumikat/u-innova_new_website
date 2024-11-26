@@ -9,7 +9,7 @@
   border-right: #500e8e solid 1px;
   border-radius: 10px;
   text-decoration: none;
-  color: $p-color;
+  color: #e6e6e6;
   transition: color 0.3s, transform 0.3s, background-position 1s;
   display: inline-block;
 
@@ -17,5 +17,20 @@
     color: white;
     transform: translateY(-4px);
     background-position: right;
+  }
+}
+
+.btn-border {
+  padding: 12px 20px;
+  background: transparent;
+  border: $p-color solid 1px;
+  border-radius: 32px;
+  color: $p-color;
+  font-weight: 500;
+  transition: color 0.3s, background 0.5s;
+
+  &:hover {
+    background: $p-color;
+    color: $middle-purple;
   }
 }

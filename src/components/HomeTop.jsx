@@ -33,11 +33,7 @@ const HomeTop = () => {
                                         className="btn-purple-gradient"
                                         onClick={() => {
                                             const target = document.getElementById('readmore');
-                                            if (target) {
-                                                target.scrollIntoView({behavior: 'smooth'});
-                                            } else {
-                                                console.error('Elemento com ID "readmore" não encontrado.');
-                                            }
+                                            target.scrollIntoView({behavior: 'smooth'});
                                         }}
                                     >
                                         Read More

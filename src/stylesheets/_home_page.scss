@@ -48,13 +48,37 @@
     margin-bottom: 0;
   }
 
-  h2{
+  @keyframes neonPulse {
+    0%, 100% {
+      text-shadow:
+              0 0 5px rgba(152, 18, 184, 0.5),
+              0 0 10px rgba(152, 18, 184, 0.3),
+              0 0 20px rgba(152, 18, 184, 0.2);
+    }
+    50% {
+      text-shadow:
+              0 0 8px rgba(152, 18, 184, 0.8),
+              0 0 15px rgba(152, 18, 184, 0.6),
+              0 0 30px rgba(152, 18, 184, 0.3);
+    }
+  }
+
+  h2 {
     margin-top: 0;
     text-align: center;
     font-size: 5rem;
     font-weight: bold;
-    color: #7f2bf7;
+      color: #bbbbbb;
+
+    text-shadow:
+            0 0 5px rgba(152, 18, 184, 0.6),  /* Brilho próximo */
+            0 0 10px rgba(152, 18, 184, 0.3), /* Brilho médio */
+            0 0 20px rgba(152, 18, 184, 0.2); /* Brilho mais difuso */
+
+    animation: neonPulse 3s infinite alternate;
   }
+
+
 
   p {
     text-align: center;
@@ -67,14 +91,23 @@
   h2 {
     text-align: center;
     font-size: 2.5rem;
-    background: linear-gradient(90deg, #9838f4, #c1272d, #ffffff, #686770, #e6e6e6, #686770);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 }
 
 .grid-home {
   padding-top: 30px;
+  padding-bottom: 30px;
+
+  svg {
+    margin-right: 1rem;
+    color: $middle-purple;
+    font-size: 1.2rem;
+  }
+
+  h5 {
+    margin-bottom: 0;
+  }
+
   .row {
     display: flex;
     flex-wrap: wrap;
@@ -91,10 +124,6 @@
     border: 1px solid #212121;
     position: relative;
 
-    p {
-      color: $p-color;
-    }
-
     .icon {
       max-height: 200px;
       width: auto;
@@ -108,5 +137,38 @@
     .p-icon2 {
       margin-right: 20%;
     }
+  }
+}
+
+.mission-block {
+  background: linear-gradient(to right, #500e8e, #770b13);
+  padding-top: 6%;
+  padding-bottom: 5%;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse, transparent 2%, #0c0c0e 100%);
+    pointer-events: none;
+  }
+
+  * {
+    z-index: 2;
+  }
+
+  h5 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: $p-color;
+    text-align: center;
   }
 }

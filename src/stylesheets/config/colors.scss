@@ -1,2 +1,11 @@
 $bg-color: #0c0c0e;
-$p-color: #bbbbbb
+$p-color: #bbbbbb;
+
+$light-purple: #9838f4;
+$middle-purple: #7c1dc9;
+
+.gradient-font {
+  background: linear-gradient(90deg, #9838f4, #c1272d, #ffffff, #686770, #e6e6e6, #686770);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
