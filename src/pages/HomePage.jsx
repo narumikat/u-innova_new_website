@@ -24,7 +24,7 @@ const HomePage = () => {
                 </div>
                 < GridFeatures/>
             </div>
-                < MissionBlock/>
+            < MissionBlock/>
         </div>
     );
 };
