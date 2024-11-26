@@ -207,6 +207,17 @@
     }
   }
 
+  .swiper-pagination-bullet {
+    background: #ccc;
+    opacity: 0.5;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: $p-color;
+    opacity: 1;
+  }
+
+
   .carousel-card {
      padding: 20px;
      background: #141414;
@@ -216,7 +227,7 @@
      flex-direction: column;
      justify-content: start;
      height: 100%;
-     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+     transition: box-shadow 0.3s;
 
     &:hover {
       cursor: pointer;
