@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "serve -s build",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "@emotion/react": "^11.13.5",
@@ -22,6 +24,7 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.0.1",
     "sass": "^1.81.0",
+    "serve": "^14.2.4",
     "swiper": "^11.1.15"
   },
   "devDependencies": {
