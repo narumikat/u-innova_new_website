@@ -34,14 +34,14 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: radial-gradient(ellipse, transparent 2%, #0c0c0e 90%, #0c0c0e 100%);
+      background: radial-gradient(ellipse, transparent 2%, #0c0c0e 75%, #0c0c0e 100%);
       pointer-events: none;
     }
   }
 
   h1 {
     font-size: 4rem;
-    background: linear-gradient(to right, #686770, #686770, #e6e6e6, #686770, #686770);
+    background: linear-gradient(to left, #ffffff, #686770, #e6e6e6, #ffffff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
@@ -57,7 +57,6 @@
   }
 
   p {
-    color: $p-color;
     text-align: center;
   }
 }
@@ -68,16 +67,45 @@
   h2 {
     text-align: center;
     font-size: 2.5rem;
-    background: linear-gradient(to right, #686770, #e6e6e6, #686770, #686770, #686770);
+    background: linear-gradient(90deg, #9838f4, #c1272d, #ffffff, #686770, #e6e6e6, #686770);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+}
 
-  h3 {
-    font-size: 2.5rem;
-    margin-right: 0.5rem;
-    background: linear-gradient(to right, #9838f4, #c1272d);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.grid-home {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .grid-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #141414;
+    border-radius: 15px;
+    border: 1px solid #212121;
+    position: relative;
+
+    p {
+      color: $p-color;
+    }
+
+    .icon {
+      max-height: 250px;
+      width: auto;
+      height: auto;
+    }
+
+    .p-icon {
+      margin-left: 20%;
+    }
+
+    .p-icon2 {
+      margin-right: 20%;
+    }
   }
 }

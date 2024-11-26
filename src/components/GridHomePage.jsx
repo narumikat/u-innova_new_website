@@ -1,42 +1,67 @@
 import React from "react";
+import icon1 from '../assets/icon1.png';
+import icon2 from '../assets/icon2.png';
+import icon3 from '../assets/icon3.png';
+import icon4 from '../assets/icon4.png';
 
 const GridHomePage = () => {
     return (
-        <div className="container my-5">
+        <div className="container my-5 grid-home">
             <div className="row g-4">
-                {/* Primeiro Card */}
-                <div className="col-lg-6 col-md-12">
-                    <div className="card p-4 bg-dark text-white rounded-3 shadow">
-                        <h5 className="mb-3">Ready in 96ms</h5>
-                        <p>Instant server start</p>
-                        <p className="text-muted">On demand file serving over native ESM, no bundling required!</p>
+                <div className="col-lg-7 col-md-12">
+                    <div className="grid-card text-white rounded-3 shadow">
+                        <div className='d-flex justify-content-start'>
+                            <img src={icon1} alt="Icon" className='icon img-fluid'/>
+                        </div>
+                        <div className='p-icon'>
+                            <p><strong>Customized software solution</strong> for the efficient management of your
+                                business. Our advanced
+                                program simplifies and automates key processes, from managing leads, inventory, users to
+                                tracking your business growth.</p>
+                        </div>
                     </div>
                 </div>
 
-                {/* Segundo Card */}
-                <div className="col-lg-6 col-md-12">
-                    <div className="card p-4 bg-dark text-white rounded-3 shadow">
-                        <h5 className="mb-3">Lightning fast HMR</h5>
-                        <p>Hot Module Replacement (HMR)</p>
-                        <p className="text-muted">Stays fast regardless of app size.</p>
+                <div className="col-lg col-md-12">
+                    <div className="grid-card text-white rounded-3 shadow">
+                        <div className='p-icon'>
+                            <p><strong>Increase your online presence</strong>, acquire customers and accelerate your
+                                business. Discover
+                                innovation and creativity at your fingertips with U-Innova Studios</p>
+                        </div>
+                        <div className='d-flex justify-content-start'>
+                            <img src={icon2} alt="Icon" className='icon img-fluid'/>
+                        </div>
                     </div>
                 </div>
 
-                {/* Terceiro Card */}
-                <div className="col-lg-6 col-md-12">
-                    <div className="card p-4 bg-dark text-white rounded-3 shadow">
-                        <h5 className="mb-3">Rich features</h5>
-                        <p>Out-of-the-box support for</p>
-                        <p className="text-muted">TypeScript, JSX, CSS and more.</p>
+                <div className="col-lg-5 col-md-12">
+                    <div className="grid-card text-white rounded-3 shadow">
+                        <div className='p-icon2'>
+                            <p>With robust applicant tracking, project management, and integrated communication
+                                features, we
+                                develop software that enables companies to optimize their operational efficiency and
+                                improve
+                                service quality.</p>
+                        </div>
+                        <div className='d-flex justify-content-end'>
+                            <img src={icon4} alt="Icon" className='icon img-fluid'/>
+                        </div>
                     </div>
                 </div>
 
-                {/* Quarto Card */}
-                <div className="col-lg-6 col-md-12">
-                    <div className="card p-4 bg-dark text-white rounded-3 shadow">
-                        <h5 className="mb-3">Optimized build</h5>
-                        <p>Pre-configured Rollup build</p>
-                        <p className="text-muted">With multi-page and library mode support.</p>
+                <div className="col-lg col-md-12">
+                    <div className="grid-card text-white rounded-3 shadow">
+                        <div className='p-icon2'>
+                            <p>We offer a comprehensive marketing solution to help your business stand out in the
+                                marketplace. Our custom solution combines creative strategies, data analytics and
+                                technology
+                                to boost your online presence, increase brand awareness and attract qualified
+                                customers.</p>
+                        </div>
+                        <div className='d-flex justify-content-end'>
+                            <img src={icon3} alt="Icon" className='icon img-fluid'/>
+                        </div>
                     </div>
                 </div>
             </div>

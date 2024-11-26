@@ -2,3 +2,8 @@
 @import 'config/colors';
 @import 'home_page';
 @import 'components/index';
+
+p {
+  color: $p-color;
+  font-size: 1.1rem;
+}

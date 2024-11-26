@@ -11,10 +11,11 @@ const HomePage = () => {
             < HomeTop/>
             <div className='container middle-container'>
                 <div className='d-flex justify-content-center align-items-center'>
-                    <h3>Powerful</h3><h2>growth solutions</h2>
+                    <h2>Powerful growth solutions</h2>
                 </div>
+                <p className='text-center'>Driving Your Success with Marketing, Design, and Software Solutions.</p>
             </div>
-            < GridHomePage />
+            < GridHomePage/>
         </div>
     );
 };
