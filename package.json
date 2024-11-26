@@ -5,11 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "start": "serve -s build",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "@emotion/react": "^11.13.5",
