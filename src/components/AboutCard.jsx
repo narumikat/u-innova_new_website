@@ -25,23 +25,27 @@ const teamMembers = [
 const AboutCards = () => {
     return (
         <section className="card-container">
-            {teamMembers.map((member, index) => (
-                <div key={index} className="card-about">
-                    <div className="card-about-body">
-                        <img src={member.imgSrc} alt={member.alt} />
-                        <div className="card-content">
-                            <h2>{member.name}</h2>
-                            <p>{member.description}</p>
-                            <a href={member.link} className="button">
-                                About Us
-                                <span className="material-symbols-outlined">
-                  <i className="fa-solid fa-arrow-right"></i>
-                </span>
-                            </a>
-                        </div>
-                    </div>
+
+                <div className="d-flex justify-content-center align-items-center">
+                    <h2 className="gradient-font2 mt-5">Who We Are</h2>
                 </div>
-            ))}
+                <div className="d-flex card-box">
+                    {teamMembers.map((member, index) => (
+                        <div key={index} className="card-about">
+                            <div className="card-about-body">
+                                <img src={member.imgSrc} alt={member.alt}/>
+                                <div className="card-content">
+                                    <h2>{member.name}</h2>
+                                    <p>{member.description}</p>
+                                    <a href={member.link} className="button">
+                                        About Us
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+
         </section>
     );
 };

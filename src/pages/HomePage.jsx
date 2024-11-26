@@ -32,9 +32,6 @@ const HomePage = () => {
                 <h2 className="gradient-font mt-5">U-innova Latest Projects</h2>
             </div>
             < CustomSwiper/>
-            <div className="d-flex justify-content-center align-items-center">
-                <h2 className="gradient-font2 mt-5">Who We Are</h2>
-            </div>
             < AboutCards/>
             < Footer/>
         </div>
