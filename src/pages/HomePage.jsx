@@ -3,6 +3,7 @@ import HomeTop from '../components/HomeTop.jsx'
 import GridHomePage from '../components/GridHomePage.jsx'
 import GridFeatures from "../components/GridFeatures.jsx";
 import MissionBlock from "../components/MissionBlock.jsx";
+import CustomSwiper from "../components/CustomSwiper.jsx";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const HomePage = () => {
@@ -25,6 +26,10 @@ const HomePage = () => {
                 < GridFeatures/>
             </div>
             < MissionBlock/>
+            <div className="d-flex justify-content-center align-items-center">
+                <h2 className="gradient-font mt-5">U-innova Latest Projects</h2>
+            </div>
+            < CustomSwiper/>
         </div>
     );
 };
