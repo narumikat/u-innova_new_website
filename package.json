@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "vite",
     "lint": "eslint .",
-    "heroku-postbuild": "npm run build",
-    "start": "vite preview",
+    "heroku-postbuild": "npm install && npm run build",
+    "start": "vite preview --port $PORT",
     "build": "vite build",
     "preview": "vite preview",
     "postinstall": "npm run build"
