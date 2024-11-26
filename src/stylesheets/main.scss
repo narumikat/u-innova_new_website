@@ -7,3 +7,7 @@ p {
   color: $p-color;
   font-size: 1.1rem;
 }
+
+html {
+  scroll-behavior: smooth;
+}

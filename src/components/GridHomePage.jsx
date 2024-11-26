@@ -38,7 +38,7 @@ const GridHomePage = () => {
                 <div className="col-lg-5 col-md-12">
                     <div className="grid-card text-white rounded-3 shadow">
                         <div className='p-icon2'>
-                            <p>With robust applicant tracking, project management, and integrated communication
+                            <p>With <strong>robust applicant tracking, project management</strong>, and integrated communication
                                 features, we
                                 develop software that enables companies to optimize their operational efficiency and
                                 improve
@@ -53,7 +53,7 @@ const GridHomePage = () => {
                 <div className="col-lg col-md-12">
                     <div className="grid-card text-white rounded-3 shadow">
                         <div className='p-icon2'>
-                            <p>We offer a comprehensive marketing solution to help your business stand out in the
+                            <p>We offer a comprehensive <strong>marketing solution</strong> to help your business stand out in the
                                 marketplace. Our custom solution combines creative strategies, data analytics and
                                 technology
                                 to boost your online presence, increase brand awareness and attract qualified

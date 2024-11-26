@@ -10,7 +10,7 @@ const HomePage = () => {
         <div>
             < HomeTop/>
             <div className='container middle-container'>
-                <div className='d-flex justify-content-center align-items-center'>
+                <div id="readmore" className='d-flex justify-content-center align-items-center'>
                     <h2>Powerful growth solutions</h2>
                 </div>
                 <p className='text-center'>Driving Your Success with Marketing, Design, and Software Solutions.</p>

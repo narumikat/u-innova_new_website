@@ -28,10 +28,22 @@ const HomeTop = () => {
                                     memorable way. Lets make your brand a successful reference.
                                 </p>
                                 <div className="d-flex justify-content-center align-items-center">
-                                    <a id="pageTitleButton" className="btn-purple-gradient" href="#solutions">
-                                        Saiba mais
-                                    </a>
+                                    <button
+                                        id="pageTitleButton"
+                                        className="btn-purple-gradient"
+                                        onClick={() => {
+                                            const target = document.getElementById('readmore');
+                                            if (target) {
+                                                target.scrollIntoView({behavior: 'smooth'});
+                                            } else {
+                                                console.error('Elemento com ID "readmore" não encontrado.');
+                                            }
+                                        }}
+                                    >
+                                        Read More
+                                    </button>
                                 </div>
+
                             </div>
                         </div>
                     </div>
