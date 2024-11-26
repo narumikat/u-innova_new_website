@@ -63,7 +63,7 @@ const Carousel = () => {
 
     return (
         <div className="d-flex align-items-center justify-content-center">
-            <div className="col-10 carousel-container">
+            <div className="col-md-10 col-12 carousel-container">
                 <SwiperLib
                     modules={[Navigation, Pagination, Autoplay]}
                     spaceBetween={0}
@@ -74,6 +74,14 @@ const Carousel = () => {
                     autoplay={{ delay: 2000 }}
                     onSwiper={handleSwiperInit}
                     className='swiper-slide'
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 2,
+                        },
+                        0: {
+                            slidesPerView: 1,
+                        },
+                    }}
                 >
                     {slides.map((slide, index) => (
                         <SwiperSlide key={index}>

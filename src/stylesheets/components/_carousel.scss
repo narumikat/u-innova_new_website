@@ -60,4 +60,17 @@
       color: #fff;
     }
   }
+
+  @media (max-width: 640px) {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none;
+    }
+
+    .swiper-slide {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
 }

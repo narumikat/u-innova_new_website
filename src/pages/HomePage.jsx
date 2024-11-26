@@ -5,6 +5,7 @@ import GridFeatures from "../components/GridFeatures.jsx";
 import MissionBlock from "../components/MissionBlock.jsx";
 import CustomSwiper from "../components/CustomSwiper.jsx";
 import AboutCards from "../components/AboutCard.jsx";
+import StartProject from "../components/StartProject.jsx";
 import Footer from "../components/Footer.jsx"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -22,8 +23,8 @@ const HomePage = () => {
             </div>
             <div className="grid-home">
                 < GridHomePage/>
-                <div className="d-flex justify-content-center align-items-center">
-                    <h2 className="gradient-font mt-5">Innovative Services to Boost Your Brand with U-Innova</h2>
+                <div className="d-flex justify-content-center align-items-center mx-4">
+                    <h2 className="gradient-font mt-5 text-center">Innovative Services to Boost Your Brand with U-Innova</h2>
                 </div>
                 < GridFeatures/>
             </div>
@@ -33,6 +34,7 @@ const HomePage = () => {
             </div>
             < CustomSwiper/>
             < AboutCards/>
+            < StartProject />
             < Footer/>
         </div>
     );

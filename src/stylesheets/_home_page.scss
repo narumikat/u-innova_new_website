@@ -81,8 +81,26 @@
   p {
     text-align: center;
   }
+
+  @media (max-width: 640px) {
+    padding-top: 20%;
+    height: 60vh;
+    h1 {
+      font-size: 3rem;
+    }
+
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    .img-bg {
+      background-image: none;
+    }
+  }
 }
 
+ //MIDDLE CONTAINER
 .middle-container {
   padding-top: 5%;
 
@@ -91,6 +109,8 @@
     font-size: 2.5rem;
   }
 }
+
+//GRID
 
 .grid-home {
   padding-top: 30px;
@@ -117,9 +137,9 @@
     height: 100%;
     padding: 20px;
     box-sizing: border-box;
-    background: #141414;
+    background: $card-bg;
     border-radius: 15px;
-    border: 1px solid #212121;
+    border: 1px solid $card-border;
     position: relative;
 
     .icon {
@@ -136,7 +156,15 @@
       margin-right: 20%;
     }
   }
+
+  @media (max-width: 640px) {
+    .icon {
+      max-width: 150px;
+    }
+  }
 }
+
+ //MISSION
 
 .mission-block {
   background: linear-gradient(to right, #500e8e, #770b13);
@@ -173,3 +201,44 @@
   }
 }
 
+//START A PROJECT
+
+.start-project {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .project-card {
+    background: $card-bg;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid $card-border;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+
+    h3 {
+      color: $p-color;
+    }
+
+    a {
+      font-size: 14px;
+      background-color: $p-color;
+      transition: background-color 0.3s;
+      &:hover {
+        background-color: #fff;
+      }
+    }
+  }
+
+  @media (max-width: 640px) {
+    .project-card {
+      width: 90%;
+    }
+  }
+}

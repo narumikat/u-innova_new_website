@@ -12,9 +12,9 @@ const Footer = () => {
         <>
             <div className="footer">
                 <div className="container">
-                    <div className="d-flex">
+                    <div className="row">
                         {/* About Website */}
-                        <div className="col-md-6 col-12 mx-4">
+                        <div className="col-md-6 col-sm-11">
                             <h6 id="aboutWebsite">About the Website</h6>
                             <p className="p-small" id="aboutWebsiteText">
                                 Welcome to the U-Innova Studios website! We are a company passionate about innovation,
@@ -24,19 +24,13 @@ const Footer = () => {
                             </p>
                         </div>
                         {/* Links Section */}
-                        <div className="col-md col-12 mx-4">
+                        <div className="col-md col-sm-11">
                             <div className="">
                                 <h6>Links</h6>
                                 <ul className="list-unstyled li-space-lg p-small">
                                     <li>
                                         Important: <a href="terms.html">Terms & Conditions</a>,{' '}
                                         <a href="privacy.html">Privacy Policy</a>
-                                    </li>
-                                    <li>
-                                        Menu: <a href="index.html">Home</a>,{' '}
-                                        <a href="index.html#solutions">Solutions</a>,{' '}
-                                        <a href="index.html#software">Software</a>,{' '}
-                                        <a href="index.html#plans">Plans</a>
                                     </li>
                                 </ul>
                             </div>
