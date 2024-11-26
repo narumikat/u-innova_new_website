@@ -1,4 +1,5 @@
 import React from 'react';
+import NavBar from "../components/NavBar.jsx";
 import HomeTop from '../components/HomeTop.jsx'
 import GridHomePage from '../components/GridHomePage.jsx'
 import GridFeatures from "../components/GridFeatures.jsx";
@@ -14,6 +15,7 @@ const HomePage = () => {
 
     return (
         <div>
+            < NavBar/>
             < HomeTop/>
             <div className='container middle-container'>
                 <div id="readmore" className='d-flex justify-content-center align-items-center'>
@@ -29,9 +31,6 @@ const HomePage = () => {
                 < GridFeatures/>
             </div>
             < MissionBlock/>
-            <div className="d-flex justify-content-center align-items-center">
-                <h2 className="gradient-font mt-5">U-innova Latest Projects</h2>
-            </div>
             < CustomSwiper/>
             < AboutCards/>
             < StartProject />

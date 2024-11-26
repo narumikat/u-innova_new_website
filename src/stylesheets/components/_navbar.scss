@@ -1,0 +1,24 @@
+.navbar {
+  background-color: $bg-color;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  border-bottom: 1px solid #51515e;
+
+  .navbar-brand {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .logo-image img {
+    width: 100px;
+    height: auto;
+  }
+
+  a {
+    color: $p-color;
+    transition: color 0.3s ease-in-out;
+    &:hover {
+      color: #fff;
+    }
+  }
+}

@@ -6,7 +6,7 @@ const HomeTop = () => {
     const words = ['Ideas', 'Vision', 'Brand', 'Growth', 'Goals', 'Online presence'];
 
     return (
-        <div className="home-top-bg">
+        <div className="home-top-bg" id="home-top">
             <div className="img-bg">
                 <div className="container">
                     <div className="row d0flex justify-content-center align-items-center">

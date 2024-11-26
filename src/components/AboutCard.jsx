@@ -26,7 +26,7 @@ const AboutCards = () => {
     return (
         <section className="card-container">
 
-                <div className="d-flex justify-content-center align-items-center">
+                <div className="d-flex justify-content-center align-items-center" id="about">
                     <h2 className="gradient-font2 mt-5">Who We Are</h2>
                 </div>
                 <div className="d-flex card-box">

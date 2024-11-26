@@ -62,47 +62,52 @@ const Carousel = () => {
     };
 
     return (
-        <div className="d-flex align-items-center justify-content-center">
-            <div className="col-md-10 col-12 carousel-container">
-                <SwiperLib
-                    modules={[Navigation, Pagination, Autoplay]}
-                    spaceBetween={0}
-                    slidesPerView={2}
-                    navigation
-                    pagination={{ clickable: true }}
-                    loop
-                    autoplay={{ delay: 2000 }}
-                    onSwiper={handleSwiperInit}
-                    className='swiper-slide'
-                    breakpoints={{
-                        640: {
-                            slidesPerView: 2,
-                        },
-                        0: {
-                            slidesPerView: 1,
-                        },
-                    }}
-                >
-                    {slides.map((slide, index) => (
-                        <SwiperSlide key={index}>
-                            <div
-                                className="carousel-card"
-                                onMouseEnter={pauseAutoplay}
-                                onMouseLeave={resumeAutoplay}
-                            >
-                                <img
-                                    src={slide.src}
-                                    alt={slide.alt}
-                                    style={{ width: '100%', borderRadius: '8px' }}
-                                />
-                                <div className="description mt-3 text-center">
-                                    <h5>{slide.alt}</h5>
-                                    <p>{slide.description}</p>
+        <div id="portfolio">
+            <div className="d-flex justify-content-center align-items-center">
+                <h2 className="gradient-font mt-5">U-innova Latest Projects</h2>
+            </div>
+            <div className="d-flex align-items-center justify-content-center">
+                <div className="col-md-10 col-12 carousel-container">
+                    <SwiperLib
+                        modules={[Navigation, Pagination, Autoplay]}
+                        spaceBetween={0}
+                        slidesPerView={2}
+                        navigation
+                        pagination={{clickable: true}}
+                        loop
+                        autoplay={{delay: 2000}}
+                        onSwiper={handleSwiperInit}
+                        className='swiper-slide'
+                        breakpoints={{
+                            640: {
+                                slidesPerView: 2,
+                            },
+                            0: {
+                                slidesPerView: 1,
+                            },
+                        }}
+                    >
+                        {slides.map((slide, index) => (
+                            <SwiperSlide key={index}>
+                                <div
+                                    className="carousel-card"
+                                    onMouseEnter={pauseAutoplay}
+                                    onMouseLeave={resumeAutoplay}
+                                >
+                                    <img
+                                        src={slide.src}
+                                        alt={slide.alt}
+                                        style={{width: '100%', borderRadius: '8px'}}
+                                    />
+                                    <div className="description mt-3 text-center">
+                                        <h5>{slide.alt}</h5>
+                                        <p>{slide.description}</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </SwiperSlide>
-                    ))}
-                </SwiperLib>
+                            </SwiperSlide>
+                        ))}
+                    </SwiperLib>
+                </div>
             </div>
         </div>
     );
