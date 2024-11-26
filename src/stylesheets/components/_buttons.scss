@@ -1,0 +1,14 @@
+.btn-purple-gradient {
+  background-image: linear-gradient(to right, #6b24d6, #a56ef4);
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: $p-color;
+  transition: color 0.3s, transform 0.3s;
+  display: inline-block;
+
+  &:hover {
+    color: white;
+    transform: translateY(-4px);
+  }
+}
