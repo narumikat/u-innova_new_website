@@ -1,6 +1,8 @@
 # U-Innova Website
 
-This is the official repository for the U-Innova website: **[https://u-innova.com/](https://u-innova.com/)**
+This is the official repository for the U-Innova website: **[https://u-innova.com/](https://u-innova.com/)** 
+
+U-Innova is dedicated to innovative software solutions and creative marketing strategies to empower businesses globally. This repository contains the codebase for the website, showcasing our services in software development and digital marketing.
 
 ## About U-Innova
 
