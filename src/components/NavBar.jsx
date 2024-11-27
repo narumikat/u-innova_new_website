@@ -18,17 +18,23 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import logo from "../assets/logo.svg";
 
-// Tema personalizado com cores para navbar
 const customTheme = createTheme({
     palette: {
         primary: {
-            main: "#0c0c0e", // Cor do fundo da navbar
+            main: "#0c0c0e",
         },
         text: {
-            primary: "#bbbbbb", // Cor do texto e ícones
+            primary: "#bbbbbb",
+        },
+    },
+    typography: {
+        fontSize: 10,
+        button: {
+            fontSize: 14,
         },
     },
 });
+
 
 const pages = ["Home", "About Us", "Portfolio"];
 
@@ -70,7 +76,7 @@ const Navbar = () => {
                                 mr: 2,
                                 display: { xs: "flex", md: "none" },
                                 flexGrow: 1,
-                                color: "inherit", // Herda a cor do texto definida no tema
+                                color: "text.primary",
                                 textDecoration: "none",
                             }}
                         >
@@ -153,21 +159,21 @@ const Navbar = () => {
                                     target="_blank"
                                     sx={{ color: "text.primary" }}
                                 >
-                                    <FontAwesomeIcon icon={faFacebookF} />
+                                    <FontAwesomeIcon icon={faFacebookF} style={{ fontSize: "24px" }} />
                                 </IconButton>
                                 <IconButton
                                     href="https://www.instagram.com/uinnova_studio"
                                     target="_blank"
                                     sx={{ color: "text.primary" }}
                                 >
-                                    <FontAwesomeIcon icon={faInstagram} />
+                                    <FontAwesomeIcon icon={faInstagram} style={{ fontSize: "24px" }} />
                                 </IconButton>
                                 <IconButton
                                     href="https://wa.me/+818066557091"
                                     target="_blank"
                                     sx={{ color: "text.primary" }}
                                 >
-                                    <FontAwesomeIcon icon={faWhatsapp} />
+                                    <FontAwesomeIcon icon={faWhatsapp} style={{ fontSize: "24px" }} />
                                 </IconButton>
                             </Box>
                         </Box>
