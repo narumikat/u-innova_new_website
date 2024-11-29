@@ -1,5 +1,3 @@
-import React from "react";
-
 const MissionBlock = () => {
     return (
         <div className="mission-block">
