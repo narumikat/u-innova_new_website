@@ -1,5 +1,3 @@
-import React from 'react';
-
 import CassianoImage from '../assets/cassiano.jpg'
 import NarumiImage from '../assets/narumi.jpg'
 

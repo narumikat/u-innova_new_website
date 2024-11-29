@@ -1,4 +1,3 @@
-import React from 'react';
 import NavBar from "../components/NavBar.jsx";
 import HomeTop from '../components/HomeTop.jsx'
 import GridHomePage from '../components/GridHomePage.jsx'
@@ -11,7 +10,6 @@ import Footer from "../components/Footer.jsx"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const HomePage = () => {
-    const words = ['Ideas', 'Vision', 'Brand', 'Growth', 'Goals', 'Online presence'];
 
     return (
         <div>

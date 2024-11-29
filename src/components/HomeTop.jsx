@@ -1,6 +1,4 @@
 import ReplaceMe from '../components/Replace.jsx';
-import React from "react";
-
 
 const HomeTop = () => {
     const words = ['Ideas', 'Vision', 'Brand', 'Growth', 'Goals', 'Online presence'];

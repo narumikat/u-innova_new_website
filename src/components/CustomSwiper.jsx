@@ -1,4 +1,3 @@
-import React from 'react';
 import { Swiper as SwiperLib, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
