@@ -35,8 +35,11 @@ const customTheme = createTheme({
     },
 });
 
-
-const pages = ["Home", "About Us", "Portfolio"];
+const pages = [
+    { name: "Home", href: "/" },
+    { name: "About Us", href: "/about" },
+    { name: "Portfolio", href: "/#portfolio" },
+];
 
 const Navbar = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -113,12 +116,15 @@ const Navbar = () => {
                             >
                                 {/* Links */}
                                 {pages.map((page) => (
-                                    <MenuItem key={page} onClick={handleCloseNavMenu}>
+                                    <MenuItem key={page.name} onClick={handleCloseNavMenu}>
                                         <Typography
                                             textAlign="center"
                                             sx={{ color: "text.primary" }}
+                                            component="a"
+                                            href={page.href}
+                                            style={{ textDecoration: "none" }}
                                         >
-                                            {page}
+                                            {page.name}
                                         </Typography>
                                     </MenuItem>
                                 ))}
@@ -138,8 +144,8 @@ const Navbar = () => {
                             <Box sx={{ display: { xs: "none", md: "flex" }, mr: 2 }}>
                                 {pages.map((page) => (
                                     <Button
-                                        key={page}
-                                        href={`#${page.toLowerCase().replace(/\s+/g, '-')}`}
+                                        key={page.name}
+                                        href={page.href}
                                         onClick={handleCloseNavMenu}
                                         sx={{
                                             my: 2,
@@ -147,7 +153,7 @@ const Navbar = () => {
                                             display: "block",
                                         }}
                                     >
-                                        {page}
+                                        {page.name}
                                     </Button>
                                 ))}
                             </Box>

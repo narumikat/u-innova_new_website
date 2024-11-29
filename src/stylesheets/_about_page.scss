@@ -1,0 +1,161 @@
+.about-page {
+
+  p {
+    line-height: 1.7;
+  }
+
+  h3 {
+    margin-bottom: 2rem;
+  }
+
+  .about-page-top {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    height: 360px;
+    background-image: url("../assets/about_page.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(ellipse, transparent 10%, #0c0c0e 100%);
+      pointer-events: none;
+    }
+
+    * {
+      z-index: 2;
+    }
+
+    h1 {
+      font-size: 3rem;
+      background: linear-gradient(to left, #686770, #e6e6e6, #ffffff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .img-we {
+    width: 100%;
+  }
+
+  .services {
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    .img-hands {
+      width: 100%;
+      position: relative;
+      z-index: 0;
+      display: flex;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(ellipse, transparent 30%, #0c0c0e 60%, #0c0c0e 100%);
+        pointer-events: none;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  ul {
+    margin-top: 30px;
+
+    li {
+      color: $p-color;
+      margin-bottom: 10px;
+    }
+  }
+
+  .why-choose-us {
+    margin-bottom: 100px;
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      box-sizing: border-box;
+      background: $card-bg;
+      position: relative;
+      padding: 20px;
+      border-radius: 15px;
+      border: 1px solid $card-border;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      height: 100%;
+      flex: 1;
+
+      h5 {
+        color: $p-color;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+
+      p {
+        font-weight: 300;
+      }
+
+      svg {
+        color: $p-color;
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  .founders {
+    h2 {
+      margin-bottom: 80px;
+    }
+
+    h5 {
+      color: $p-color;
+      margin-bottom: 20px;
+      margin-top: 30px;
+    }
+
+    .founder-img {
+      width: 100%;
+      position: relative;
+      z-index: 0;
+      display: flex;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(ellipse 60% 80%, transparent 50%, #0c0c0e 60%, #0c0c0e 100%);
+
+        pointer-events: none;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

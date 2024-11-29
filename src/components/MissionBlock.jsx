@@ -1,5 +1,3 @@
-import React from "react";
-
 const MissionBlock = () => {
     return (
         <div className="mission-block">
@@ -8,11 +6,14 @@ const MissionBlock = () => {
                     customers
                     to succeed in an ever-evolving digital world.</h5>
                 <div className="d-flex justify-content-center mt-4">
-                <button
-                    id="pageTitleButton"
-                    className="btn-border" >
-                    About Us
-                </button>
+                    <button
+                        id="pageTitleButton"
+                        className="btn-border"
+                        onClick={() => (window.location.href = '/about')}
+                    >
+                        About Us
+                    </button>
+
                 </div>
             </div>
         </div>

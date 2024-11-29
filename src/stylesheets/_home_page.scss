@@ -71,9 +71,9 @@
       color: #bbbbbb;
 
     text-shadow:
-            0 0 5px rgba(152, 18, 184, 0.6),  /* Brilho próximo */
-            0 0 10px rgba(152, 18, 184, 0.3), /* Brilho médio */
-            0 0 20px rgba(152, 18, 184, 0.2); /* Brilho mais difuso */
+            0 0 5px rgba(152, 18, 184, 0.6),
+            0 0 10px rgba(152, 18, 184, 0.3),
+            0 0 20px rgba(152, 18, 184, 0.2);
 
     animation: neonPulse 3s infinite alternate;
   }
