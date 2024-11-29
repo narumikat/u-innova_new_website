@@ -6,7 +6,7 @@ const teamMembers = [
         name: 'Cassiano Yasumitsu',
         imgSrc: CassianoImage,
         description:
-            'Backend Software Engineer with experience in developing management solutions for the real estate sector in Tokyo.',
+            'Backend Software Engineer specializing in scalable management solutions for the real estate sector in Tokyo, with expertise in API development, database design, and cloud technologies.',
         alt: 'Cassiano Yasumitsu',
         link: 'about.html',
     },
@@ -14,7 +14,7 @@ const teamMembers = [
         name: 'Narumi Katayama',
         imgSrc: NarumiImage,
         description:
-            'Software developer with a passion for backend development, also experienced in web design, graphic design, digital marketing, and front-end development.',
+            'Full Stack Developer specializing in backend systems with AI, and experienced in web design, digital marketing, and branding. Also an influencer with thousands of followers.',
         alt: 'Narumi Katayama',
         link: 'about.html',
     },
