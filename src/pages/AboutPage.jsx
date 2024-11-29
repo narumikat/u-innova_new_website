@@ -125,7 +125,9 @@ const AboutPage = () => {
                                 <li>Backend development and system optimization.</li>
                                 <li>Advanced API design</li>
                                 <li>Cloud computing</li>
-                                <li>Strong foundation in database management</li>
+                                <li>Proficiency in DevOps tools </li>
+                                <li>AI integration for process automation and predictive analytics.</li>
+                                <li>Strong understanding of data modeling, ETL processes, and big data tools.</li>
                                 <li>Expertise in information security and scalable data infrastructure.</li>
                             </ul>
                         </div>
