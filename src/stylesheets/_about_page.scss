@@ -1,4 +1,11 @@
 .about-page {
+
+  p {
+    line-height: 1.7;
+  }
+   h3 {
+     margin-bottom: 2rem;
+   }
   .about-page-top {
     margin-top: 30px;
     margin-bottom: 50px;
@@ -38,10 +45,41 @@
   }
 
   .img-we {
-   width: 100%;
+    width: 100%;
   }
 
-  li {
-    color: $p-color;
+  .services {
+    margin-top: 100px;
+
+    .img-hands {
+      width: 100%;
+      position: relative;
+      z-index: 0;
+      display: flex;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(ellipse, transparent 30%, #0c0c0e 60%, #0c0c0e 100%);
+        pointer-events: none;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  ul {
+    margin-top: 30px;
+
+    li {
+      color: $p-color;
+      margin-bottom: 10px;
+    }
   }
 }

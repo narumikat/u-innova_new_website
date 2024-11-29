@@ -12,14 +12,15 @@ const AboutPage = () => {
             <div className="container">
                 <div className="d-flex row">
                     <div className="col-12 col-md-6">
+                        <h3 className="gradient-font">Web Solution Company</h3>
                         <p>U-Innova Studios is a dynamic company specializing in software development, and
-                            digital marketing. Our mission is to drive client success by delivering creative and
+                            digital marketing. <br />Our mission is to drive client success by delivering creative and
                             effective
-                            solutions. We transform ideas into reality, offering exceptional creativity to propel your
+                            solutions. <br /> We transform ideas into reality, offering exceptional creativity to propel your
                             business forward. By distinguishing your brand from the competition, we help you reach your
-                            target audience memorably. Our comprehensive services include <strong>software solutions,
+                            target audience memorably. <br /> Our comprehensive services include <strong>software solutions,
                                 digital
-                                marketing, web design, graphic design, and digital media </strong>. We pride ourselves
+                                marketing, web design, graphic design, and digital media </strong>. <hr /> We pride ourselves
                             on being at the
                             forefront of innovation, providing fresh and creative ideas to make your brand stand out.
                             Our
@@ -35,26 +36,30 @@ const AboutPage = () => {
                     </div>
                 </div>
 
-                <div className="d-flex row mt-5 pt-5">
-                    <div className="col-12 col-md-6 d-flex justify-content-center align-items-center px-4">
-
+                <div className="d-flex row services">
+                    <div className="col-12 col-md-7 d-flex justify-content-center align-items-center px-4">
+                        <div className="img-hands">
+                            <img src={HandsPhone} alt="hands phone"/>
+                        </div>
                     </div>
-                    <div className="col-12 col-md-6">
-                        <h2 className="gradient-font">Our Services</h2>
-                        <ul>
-                            <li>Marketing Strategies</li>
-                            <li>Graphic Design</li>
-                            <li>Web Design</li>
-                            <li>Branding</li>
-                            <li>Social Media</li>
-                            <li>Online Advertising</li>
-                            <li>SEO (Search Engine Optimization)</li>
-                            <li>Insightful Data Analytics</li>
-                            <li>Email Marketing</li>
-                            <li>Software Development</li>
-                            <li>E-commerce Development</li>
-                            <li>LINE bot development</li>
-                        </ul>
+                    <div className="col-12 col-md d-flex justify-content-center align-items-center px-4">
+                        <div>
+                            <h2 className="gradient-font">Our Services</h2>
+                            <ul>
+                                <li>Marketing Strategies</li>
+                                <li>Graphic Design</li>
+                                <li>Web Design</li>
+                                <li>Branding</li>
+                                <li>Social Media</li>
+                                <li>Online Advertising</li>
+                                <li>SEO (Search Engine Optimization)</li>
+                                <li>Insightful Data Analytics</li>
+                                <li>Email Marketing</li>
+                                <li>Software Development</li>
+                                <li>E-commerce Development</li>
+                                <li>LINE bot development</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
