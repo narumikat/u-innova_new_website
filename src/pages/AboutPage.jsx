@@ -1,6 +1,7 @@
 import NavBar from "../components/NavBar.jsx";
 import AboutImg from '../assets/we_think.png'
 import CassianoImg from '../assets/cassiano2.jpg'
+import NarumiImg from '../assets/narumi2.jpg'
 import HandsPhone from '../assets/hands-phone.jpg'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faLightbulb, faPhone, faCalendar} from '@fortawesome/free-solid-svg-icons'
@@ -102,13 +103,21 @@ const AboutPage = () => {
 
                 <div className="founders">
                     <h2 className="gradient-font text-center">Company Founders</h2>
-                    <div className="row mt-5">
+                    <div className="row mt-5 pb-5">
                         <div className="col-12 col-md-6">
                             <h3 className="gradient-font">Cassiano Yasumitsu</h3>
-                            <p>Backend software engineer specializing in developing robust, scalable management
-                                solutions, particularly in the real estate sector in Tokyo. With a strong background in
-                                backend architecture, API development, and database design, they excel at creating
-                                efficient systems that solve complex challenges.</p>
+                            <p>A highly skilled backend software engineer with expertise in designing and implementing
+                                robust, scalable management solutions, particularly for the real estate sector in Tokyo.
+                                With a proven ability to develop systems that optimize operations and solve complex
+                                challenges, I bring a deep understanding of backend architecture and a commitment to
+                                delivering excellence in every project. <br/>
+                                My expertise spans API development, database design, and system optimization, with a
+                                focus on creating solutions that are both efficient and secure. I have extensive
+                                experience in integrating cloud technologies to build resilient infrastructures and
+                                leverage modern DevOps practices for seamless deployment and maintenance. <br/>
+                                In addition to technical expertise, I have a strong background in data-driven
+                                decision-making, AI-driven automation, and information security, ensuring that all
+                                solutions are future-proof and aligned with the latest industry standards.</p>
                             <h5>Key Skills</h5>
                             <ul>
                                 <li>Backend development and system optimization.</li>
@@ -120,8 +129,42 @@ const AboutPage = () => {
                         </div>
                         <div className="col-12 col-md">
                             <div className="founder-img">
-                            <img src={CassianoImg} alt="Cassiano Yasumitsu"/>
+                                <img src={CassianoImg} alt="Cassiano Yasumitsu"/>
                             </div>
+                        </div>
+                    </div>
+                    <div className="row mt-5 pt-5">
+                        <div className="col-12 col-md">
+                            <div className="founder-img">
+                                <img src={NarumiImg} alt="Narumi Katayama"/>
+                            </div>
+                        </div>
+                        <div className="col-12 col-md">
+                            <h3 className="gradient-font">Narumi Katayama</h3>
+                            <p>A versatile full stack developer with extensive experience in web design, graphic design,
+                                and digital marketing. My passion for graphic design drives me to create impactful
+                                layouts that capture the essence of a brand and resonate with its audience.
+
+                                As a backend developer specializing in Artificial Intelligence (AI), I focus on building
+                                intelligent, scalable systems that solve complex challenges and enhance business
+                                operations. My expertise lies in designing robust architectures and integrating
+                                AI-powered solutions to automate processes, improve efficiency, and deliver data-driven
+                                insights.
+                                <br/>
+                                In addition to my technical expertise, I am also an influencer with a dedicated online
+                                presence and thousands of followers. I leverage my platform to connect with audiences,
+                                share insights, and promote brands in a meaningful and engaging way. My understanding of
+                                digital media and branding allows me to create authentic content that resonates with my
+                                community.</p>
+                            <h5>Key Skills</h5>
+                            <ul>
+                                <li>Full stack development (front-end and back-end).</li>
+                                <li>Advanced backend development with a focus on scalable systems.</li>
+                                <li>Expertise in AI integration and intelligent solutions.</li>
+                                <li>Graphic design and brand-focused layouts.</li>
+                                <li>Digital marketing and media strategy optimization.</li>
+                                <li>Influencing and community engagement.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
