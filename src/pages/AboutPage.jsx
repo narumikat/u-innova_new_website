@@ -1,4 +1,6 @@
 import NavBar from "../components/NavBar.jsx";
+import Footer from "../components/Footer.jsx";
+import StartProject from "../components/StartProject.jsx";
 import AboutImg from '../assets/we_think.png'
 import CassianoImg from '../assets/cassiano2.jpg'
 import NarumiImg from '../assets/narumi2.jpg'
@@ -169,6 +171,8 @@ const AboutPage = () => {
                     </div>
                 </div>
             </div>
+            < StartProject />
+            < Footer/>
         </div>
     );
 };

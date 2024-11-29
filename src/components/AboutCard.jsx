@@ -35,7 +35,7 @@ const AboutCards = () => {
                                 <div className="card-content">
                                     <h2>{member.name}</h2>
                                     <p>{member.description}</p>
-                                    <a href={member.link} className="button">
+                                    <a href='/about' className="button">
                                         About Us
                                     </a>
                                 </div>
