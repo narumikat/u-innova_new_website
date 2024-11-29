@@ -1,5 +1,6 @@
 import NavBar from "../components/NavBar.jsx";
 import AboutImg from '../assets/we_think.png'
+import CassianoImg from '../assets/cassiano2.jpg'
 import HandsPhone from '../assets/hands-phone.jpg'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faLightbulb, faPhone, faCalendar} from '@fortawesome/free-solid-svg-icons'
@@ -84,14 +85,42 @@ const AboutPage = () => {
                             <div className="card">
                                 < FontAwesomeIcon icon={faPhone}/>
                                 <h5>Dedicated Support</h5>
-                                <p>We are dedicated to your success with personalized attention and ongoing support to help you achieve your goals.</p>
+                                <p>We are dedicated to your success with personalized attention and ongoing support to
+                                    help you achieve your goals.</p>
                             </div>
                         </div>
                         <div className="col-4">
                             <div className="card">
                                 < FontAwesomeIcon icon={faCalendar}/>
                                 <h5>Proven Expertise</h5>
-                                <p>With years of experience in software development and digital marketing, we deliver high-quality solutions and consistently exceed expectations.</p>
+                                <p>With years of experience in software development and digital marketing, we deliver
+                                    high-quality solutions and consistently exceed expectations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="founders">
+                    <h2 className="gradient-font text-center">Company Founders</h2>
+                    <div className="row mt-5">
+                        <div className="col-12 col-md-6">
+                            <h3 className="gradient-font">Cassiano Yasumitsu</h3>
+                            <p>Backend software engineer specializing in developing robust, scalable management
+                                solutions, particularly in the real estate sector in Tokyo. With a strong background in
+                                backend architecture, API development, and database design, they excel at creating
+                                efficient systems that solve complex challenges.</p>
+                            <h5>Key Skills</h5>
+                            <ul>
+                                <li>Backend development and system optimization.</li>
+                                <li>Advanced API design</li>
+                                <li>Cloud computing</li>
+                                <li>Strong foundation in database management</li>
+                                <li>Expertise in information security and scalable data infrastructure.</li>
+                            </ul>
+                        </div>
+                        <div className="col-12 col-md">
+                            <div className="founder-img">
+                            <img src={CassianoImg} alt="Cassiano Yasumitsu"/>
                             </div>
                         </div>
                     </div>
