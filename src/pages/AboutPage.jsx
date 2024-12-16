@@ -124,12 +124,12 @@ const AboutPage = () => {
                                 <li>AI integration for process automation and predictive analytics.</li>
                                 <li>Strong understanding of data modeling, ETL processes, and big data tools.</li>
                                 <li>Expertise in information security and scalable data infrastructure.</li>
-                                <li> Python, Ruby, JavaScript, Wordpress, Shopify, Golang, Django, Ruby on Rails,
-                                    Node.js, AWS, PostgreSQL, MySQL, MongoDB, Redis, ETL
-                                    Pipelines, Apache Spark, BigQuery, TensorFlow, PyTorch, OAuth, JWT, Encryption
-                                    Standards (SSL/TLS), Penetration Testing
-                                </li>
+
                             </ul>
+                            <small>Python, Ruby, JavaScript, Wordpress, Shopify, Golang, Django, Ruby on Rails,
+                                Node.js, AWS, PostgreSQL, MySQL, MongoDB, Redis, ETL
+                                Pipelines, Apache Spark, BigQuery, TensorFlow, PyTorch, OAuth, JWT, Encryption
+                                Standards (SSL/TLS), Penetration Testing</small>
                         </div>
                         <div className="col-12 col-md order-first order-md-last">
                             <div className="founder-img">
@@ -169,13 +169,12 @@ const AboutPage = () => {
                                 <li>Graphic design and brand-focused layouts.</li>
                                 <li>Digital marketing and media strategy optimization.</li>
                                 <li>Influencing and community engagement.</li>
-                                <li>HTML, CSS, JavaScript, Phyton, Ruby, React.js, Vue.js, Next.js, Node js,
-                                    Django/Flask, Ruby on Rails, PostgreSQL, MySQL, SQLite, Docker, Kubernetes, Adobe
-                                    Creative
-                                    (Photoshop, Illustrator, After Effects), Figma, WordPress, Shopify,
-                                    Webflow
-                                </li>
                             </ul>
+                            <small>HTML, CSS, JavaScript, Phyton, Ruby, React.js, Vue.js, Next.js, Node js,
+                                Django/Flask, Ruby on Rails, PostgreSQL, MySQL, SQLite, Docker, Kubernetes, Adobe
+                                Creative
+                                (Photoshop, Illustrator, After Effects), Figma, WordPress, Shopify,
+                                Webflow</small>
                         </div>
                     </div>
                 </div>
@@ -183,40 +182,6 @@ const AboutPage = () => {
                     <h2 className="gradient-font text-center">Team Members</h2>
                     <div className="row mt-5 pb-5">
                         <div className="col-12 col-md-6 order-last order-md-first">
-                            <h3 className="gradient-font">Marcelo Hirata</h3>
-                            <p>
-                                Professional with expertise in data analysis, multilingual communication, and technical
-                                translation, Marcelo combines strong analytical skills with a deep understanding of
-                                data-driven decision-making and cross-cultural environments. With extensive experience
-                                in data management, teaching, and public relations, he has contributed significantly to
-                                diverse industries, from automotive manufacturing to business communication solutions.
-                            </p>
-                            <h5>Key Skills</h5>
-                            <ul>
-                                <li>Data Analysis and Quality Control</li>
-                                <li>Database Management and Data Formatting</li>
-                                <li>Public Relations and Communication System Optimization</li>
-                                <li>Teaching and Curriculum Development</li>
-                                <li>Proficiency in Tools: Python, Pandas Pynum, SQL, Tableau, Power BI, MS Project,
-                                    Spreadsheets,
-                                    Premiere Pro, Corel Draw
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="col-12 col-md order-first order-md-last">
-                            <div className="founder-img">
-                                <img src={MarceloImg} alt="Marcelo Hirata"/>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="row mt-5 pt-5">
-                        <div className="col-12 col-md">
-                            <div className="founder-img">
-                                <img src={RodrigoImg} alt="Rodrigo Toyoda"/>
-                            </div>
-                        </div>
-                        <div className="col-12 col-md">
                             <h3 className="gradient-font">Rodrigo Toyoda</h3>
                             <p>Front-End Developer with a strong foundation in modern web development technologies.
                                 Ayanori brings proven experience in designing and implementing interactive, scalable,
@@ -232,10 +197,44 @@ const AboutPage = () => {
                                 <li>R&D Collaboration for Feature Implementation</li>
                                 <li>Teaching and Mentoring in Software Development</li>
                                 <li>Experience with Cloud Deployment and Agile Methodologies</li>
-                                <li> HTML, CSS, JavaScript, TypeScript, React.js, Next.js, React Native, Tailwind CSS,
-                                    Bootstrap, PostgreSQL, MySQL, Node.js, Ruby on rails
-                                </li>
                             </ul>
+                            <small>HTML, CSS, JavaScript, TypeScript, React.js, Next.js, React Native, Tailwind CSS,
+                                Figma,
+                                Bootstrap, PostgreSQL, PostgreSQL, MySQL, SQLite, Node.js, Ruby on rails</small>
+                        </div>
+                        <div className="col-12 col-md order-first order-md-last">
+                            <div className="founder-img">
+                                <img src={RodrigoImg} alt="Rodrigo Toyoda"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="row mt-5 pt-5">
+                        <div className="col-12 col-md">
+                            <div className="founder-img">
+                                <img src={MarceloImg} alt="Marcelo Hirata"/>
+                            </div>
+                        </div>
+                        <div className="col-12 col-md">
+                            <h3 className="gradient-font">Marcelo Hirata</h3>
+                            <p>
+                                Professional with expertise in data analysis, multilingual communication, and technical
+                                translation, Marcelo combines strong analytical skills with a deep understanding of
+                                data-driven decision-making and cross-cultural environments. With extensive experience
+                                in data management, teaching, and public relations, he has contributed significantly to
+                                diverse industries, from automotive manufacturing to business communication solutions.
+                            </p>
+                            <h5>Key Skills</h5>
+                            <ul>
+                                <li>Data Analysis and Quality Control</li>
+                                <li>Database Management and Data Formatting</li>
+                                <li>Public Relations and Communication System Optimization</li>
+                                <li>Teaching and Curriculum Development</li>
+                                <small>Python, Pandas Pynum, SQL, Tableau, Power BI, MS Project,
+                                    Spreadsheets,
+                                    Premiere Pro, Corel Draw</small>
+                            </ul>
+
                         </div>
                     </div>
                 </div>
