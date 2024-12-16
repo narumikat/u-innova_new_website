@@ -1,7 +1,8 @@
 .home-top-bg {
   height: 100vh;
   background: linear-gradient(to right, #500e8e, #770b13);
-  padding-top: 8%;
+  padding-top: 7%;
+  overflow: hidden;
   position: relative;
   z-index: 0;
 
@@ -20,24 +21,36 @@
     z-index: 2;
   }
 
-  .img-bg {
-    height: 100%;
-    background-image: url("../assets/header-background.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center bottom -20%;
-
+  .mask {
     &::after {
       content: '';
       position: absolute;
-      top: 0;
+      top: -30%;
       left: 0;
       width: 100%;
-      height: 100%;
-      background: radial-gradient(ellipse, transparent 2%, #0c0c0e 75%, #0c0c0e 100%);
+      height: 130%;
+      background: radial-gradient(ellipse at top, transparent 2%, #0c0c0e 75%, #0c0c0e 100%);
       pointer-events: none;
+      z-index: 1;
+      overflow: hidden;
     }
   }
+
+  .img-bg {
+    position: absolute;
+    bottom: -40%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 110%;
+    background-image: url("../assets/laptop.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    overflow: hidden;
+    z-index: 0;
+  }
+
 
   h1 {
     font-size: 4rem;
@@ -143,7 +156,7 @@
     position: relative;
 
     .icon {
-      max-height: 200px;
+      max-height: 150px;
       width: auto;
       height: auto;
     }
@@ -160,6 +173,55 @@
   @media (max-width: 640px) {
     .icon {
       max-width: 150px;
+    }
+  }
+}
+
+// WEBSITE CREATION
+
+.website-creation {
+  margin-top: 80px;
+  margin-bottom: 60px;
+  position: relative;
+  padding: 30px;
+  min-height: 500px;
+  background-image: url("../assets/website-creation.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: calc(100% - 30px) center;
+  z-index: 0;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, transparent 50%, #0c0c0e 100%);
+    pointer-events: none;
+  }
+
+  h2 {
+    color: $p-color;
+    font-size: 4rem;
+  }
+  span {
+    background: linear-gradient(90deg, #9838f4, #c1272d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @media (max-width: 640px) {
+    min-height: 800px;
+    background-position: bottom;
+
+    &::after {
+      background: linear-gradient(to bottom, transparent 80%, #0c0c0e 100%);
+    }
+    h2 {
+      color: $p-color;
+      font-size: 2.5rem;
     }
   }
 }

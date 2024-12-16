@@ -2,6 +2,7 @@ import NavBar from "../components/NavBar.jsx";
 import HomeTop from '../components/HomeTop.jsx'
 import GridHomePage from '../components/GridHomePage.jsx'
 import GridFeatures from "../components/GridFeatures.jsx";
+import WebsiteCreation from '../components/WebsiteCreation.jsx'
 import MissionBlock from "../components/MissionBlock.jsx";
 import CustomSwiper from "../components/CustomSwiper.jsx";
 import AboutCards from "../components/AboutCard.jsx";
@@ -23,8 +24,9 @@ const HomePage = () => {
             </div>
             <div className="grid-home">
                 < GridHomePage/>
+                < WebsiteCreation />
                 <div className="d-flex justify-content-center align-items-center mx-4">
-                    <h2 className="gradient-font mt-5 text-center">Innovative Services to Boost Your Brand with U-Innova</h2>
+                    <h2 className="gradient-font2 mt-5 text-center">WHAT WE DO?</h2>
                 </div>
                 < GridFeatures/>
             </div>

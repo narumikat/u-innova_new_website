@@ -27,11 +27,11 @@
   border-radius: 32px;
   color: $p-color;
   font-weight: 500;
-  transition: color 0.3s ease-in-out, background 0.5s ease-in-out;
+  transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 
   &:hover {
-    background: $p-color;
-    color: $middle-purple;
+    border-color: $light-purple;
+    color: $light-purple;
   }
 }
 
