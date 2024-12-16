@@ -2,8 +2,10 @@ import NavBar from "../components/NavBar.jsx";
 import Footer from "../components/Footer.jsx";
 import StartProject from "../components/StartProject.jsx";
 import AboutImg from '../assets/we_think.png'
-import CassianoImg from '../assets/cassiano2.jpg'
-import NarumiImg from '../assets/narumi2.jpg'
+import CassianoImg from '../assets/cassiano.png'
+import NarumiImg from '../assets/narumi.png'
+import MarceloImg from '../assets/marcelo.png'
+import RodrigoImg from '../assets/rodrigo.png'
 import HandsPhone from '../assets/hands-phone.jpg'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faLightbulb, faPhone, faCalendar} from '@fortawesome/free-solid-svg-icons'
@@ -28,17 +30,7 @@ const AboutPage = () => {
                             target audience memorably. <br/> Our comprehensive services include <strong>software
                                 solutions,
                                 digital
-                                marketing, web design, graphic design, and digital media </strong>. <hr/> We pride
-                            ourselves
-                            on being at the
-                            forefront of innovation, providing fresh and creative ideas to make your brand stand out.
-                            Our
-                            dedicated team offers personalized attention, collaborating closely with you to achieve
-                            long-term success for your brand. At U-Innova Studios, we are passionate about innovation
-                            and
-                            committed to delivering solutions that empower our clients to thrive in an ever-evolving
-                            digital
-                            world.
+                                marketing, web design, graphic design, and digital media </strong>.
                         </p>
                     </div>
                     <div className="col-12 col-md-6 d-flex justify-content-center align-items-center px-4">
@@ -76,7 +68,7 @@ const AboutPage = () => {
                 <div className="why-choose-us">
                     <h2 className="gradient-font text-center">Why Choose Us</h2>
                     <div className="row mt-5">
-                        <div className="col-4">
+                        <div className="col-md-4 m-2">
                             <div className="card">
                                 < FontAwesomeIcon icon={faLightbulb}/>
                                 <h5>Innovative Solutions</h5>
@@ -84,7 +76,7 @@ const AboutPage = () => {
                                     technology to keep you competitive.</p>
                             </div>
                         </div>
-                        <div className="col-4">
+                        <div className="col-md-4 m-2">
                             <div className="card">
                                 < FontAwesomeIcon icon={faPhone}/>
                                 <h5>Dedicated Support</h5>
@@ -92,7 +84,7 @@ const AboutPage = () => {
                                     help you achieve your goals.</p>
                             </div>
                         </div>
-                        <div className="col-4">
+                        <div className="col-md m-2">
                             <div className="card">
                                 < FontAwesomeIcon icon={faCalendar}/>
                                 <h5>Proven Expertise</h5>
@@ -106,9 +98,11 @@ const AboutPage = () => {
                 <div className="founders">
                     <h2 className="gradient-font text-center">Company Founders</h2>
                     <div className="row mt-5 pb-5">
-                        <div className="col-12 col-md-6">
+
+                        <div className="col-12 col-md-6 order-last order-md-first">
                             <h3 className="gradient-font">Cassiano Yasumitsu</h3>
-                            <p>A highly skilled backend software engineer with expertise in designing and implementing
+                            <p>
+                                A highly skilled backend software engineer with expertise in designing and implementing
                                 robust, scalable management solutions, particularly for the real estate sector in Tokyo.
                                 With a proven ability to develop systems that optimize operations and solve complex
                                 challenges, I bring a deep understanding of backend architecture and a commitment to
@@ -119,24 +113,26 @@ const AboutPage = () => {
                                 leverage modern DevOps practices for seamless deployment and maintenance. <br/>
                                 In addition to technical expertise, I have a strong background in data-driven
                                 decision-making, AI-driven automation, and information security, ensuring that all
-                                solutions are future-proof and aligned with the latest industry standards.</p>
+                                solutions are future-proof and aligned with the latest industry standards.
+                            </p>
                             <h5>Key Skills</h5>
                             <ul>
                                 <li>Backend development and system optimization.</li>
                                 <li>Advanced API design</li>
                                 <li>Cloud computing</li>
-                                <li>Proficiency in DevOps tools </li>
+                                <li>Proficiency in DevOps tools</li>
                                 <li>AI integration for process automation and predictive analytics.</li>
                                 <li>Strong understanding of data modeling, ETL processes, and big data tools.</li>
                                 <li>Expertise in information security and scalable data infrastructure.</li>
                             </ul>
                         </div>
-                        <div className="col-12 col-md">
+                        <div className="col-12 col-md order-first order-md-last">
                             <div className="founder-img">
                                 <img src={CassianoImg} alt="Cassiano Yasumitsu"/>
                             </div>
                         </div>
                     </div>
+
                     <div className="row mt-5 pt-5">
                         <div className="col-12 col-md">
                             <div className="founder-img">
@@ -172,8 +168,64 @@ const AboutPage = () => {
                         </div>
                     </div>
                 </div>
+                <div className="team-members mt-5">
+                    <h2 className="gradient-font text-center">Team Members</h2>
+                    <div className="row mt-5 pb-5">
+                        <div className="col-12 col-md-6 order-last order-md-first">
+                            <h3 className="gradient-font">Marcelo Hirata</h3>
+                            <p>
+                                Professional with expertise in data analysis, multilingual communication, and technical
+                                translation, Marcelo combines strong analytical skills with a deep understanding of
+                                data-driven decision-making and cross-cultural environments. With extensive experience
+                                in data management, teaching, and public relations, he has contributed significantly to
+                                diverse industries, from automotive manufacturing to business communication solutions.
+                            </p>
+                            <h5>Key Skills</h5>
+                            <ul>
+                                <li>Data Analysis and Quality Control</li>
+                                <li>Database Management and Data Formatting</li>
+                                <li>Public Relations and Communication System Optimization</li>
+                                <li>Teaching and Curriculum Development</li>
+                                <li>Proficiency in Tools: Python, SQL, Tableau, Power BI, MS Project, Spreadsheets,
+                                    Premiere Pro, Corel Draw
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="col-12 col-md order-first order-md-last">
+                            <div className="founder-img">
+                                <img src={MarceloImg} alt="Marcelo Hirata"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="row mt-5 pt-5">
+                        <div className="col-12 col-md">
+                            <div className="founder-img">
+                                <img src={RodrigoImg} alt="Rodrigo Toyoda"/>
+                            </div>
+                        </div>
+                        <div className="col-12 col-md">
+                            <h3 className="gradient-font">Rodrigo Toyoda</h3>
+                            <p>Front-End Developer with a strong foundation in modern web development technologies.
+                                Ayanori brings proven experience in designing and implementing interactive, scalable,
+                                and user-friendly solutions. <br/>
+                                With a solid background as both a developer and teaching assistant, Ayanori combines
+                                technical expertise with a passion for knowledge sharing and mentorship. His experience
+                                includes refining codebases for enhanced performance, integrating seamlessly with
+                                back-end systems, and delivering user-centric features that drive business goals.</p>
+                            <h5>Key Skills</h5>
+                            <ul>
+                                <li>Front-End Development</li>
+                                <li>Codebase Optimization and Scalability</li>
+                                <li>R&D Collaboration for Feature Implementation</li>
+                                <li>Teaching and Mentoring in Software Development</li>
+                                <li>Experience with Cloud Deployment and Agile Methodologies</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            < StartProject />
+            < StartProject/>
             < Footer/>
         </div>
     );
