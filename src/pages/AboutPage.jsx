@@ -124,6 +124,11 @@ const AboutPage = () => {
                                 <li>AI integration for process automation and predictive analytics.</li>
                                 <li>Strong understanding of data modeling, ETL processes, and big data tools.</li>
                                 <li>Expertise in information security and scalable data infrastructure.</li>
+                                <li> Python, Ruby, JavaScript, Wordpress, Shopify, Golang, Django, Ruby on Rails,
+                                    Node.js, AWS, PostgreSQL, MySQL, MongoDB, Redis, ETL
+                                    Pipelines, Apache Spark, BigQuery, TensorFlow, PyTorch, OAuth, JWT, Encryption
+                                    Standards (SSL/TLS), Penetration Testing
+                                </li>
                             </ul>
                         </div>
                         <div className="col-12 col-md order-first order-md-last">
@@ -164,6 +169,12 @@ const AboutPage = () => {
                                 <li>Graphic design and brand-focused layouts.</li>
                                 <li>Digital marketing and media strategy optimization.</li>
                                 <li>Influencing and community engagement.</li>
+                                <li>HTML, CSS, JavaScript, Phyton, Ruby, React.js, Vue.js, Next.js, Node js,
+                                    Django/Flask, Ruby on Rails, PostgreSQL, MySQL, SQLite, Docker, Kubernetes, Adobe
+                                    Creative
+                                    (Photoshop, Illustrator, After Effects), Figma, WordPress, Shopify,
+                                    Webflow
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -186,7 +197,8 @@ const AboutPage = () => {
                                 <li>Database Management and Data Formatting</li>
                                 <li>Public Relations and Communication System Optimization</li>
                                 <li>Teaching and Curriculum Development</li>
-                                <li>Proficiency in Tools: Python, SQL, Tableau, Power BI, MS Project, Spreadsheets,
+                                <li>Proficiency in Tools: Python, Pandas Pynum, SQL, Tableau, Power BI, MS Project,
+                                    Spreadsheets,
                                     Premiere Pro, Corel Draw
                                 </li>
                             </ul>
@@ -220,6 +232,9 @@ const AboutPage = () => {
                                 <li>R&D Collaboration for Feature Implementation</li>
                                 <li>Teaching and Mentoring in Software Development</li>
                                 <li>Experience with Cloud Deployment and Agile Methodologies</li>
+                                <li> HTML, CSS, JavaScript, TypeScript, React.js, Next.js, React Native, Tailwind CSS,
+                                    Bootstrap, PostgreSQL, MySQL, Node.js, Ruby on rails
+                                </li>
                             </ul>
                         </div>
                     </div>
