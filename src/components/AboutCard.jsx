@@ -74,7 +74,7 @@ const AboutCards = () => {
             </div>
             <div className="row justify-content-center mt-4 card-box">
                 {teamMembers.slice(2).map((member, index) => (
-                    <div key={index} className="col-12 col-md-3 d-flex justify-content-center">
+                    <div key={index} className="col-12 col-md-2 d-flex justify-content-center">
                         <a
                             href={member.link}
                             className="card-about"
