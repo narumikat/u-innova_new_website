@@ -4,6 +4,7 @@ import StartProject from "../components/StartProject.jsx";
 import AboutImg from '../assets/we_think.png'
 import CassianoImg from '../assets/cassiano.png'
 import NarumiImg from '../assets/narumi.png'
+import CintiaImg from '../assets/cintia.png'
 import MarceloImg from '../assets/marcelo.png'
 import RodrigoImg from '../assets/rodrigo.png'
 import HandsPhone from '../assets/hands-phone.jpg'
@@ -235,6 +236,38 @@ const AboutPage = () => {
                                     Premiere Pro, Corel Draw</small>
                             </ul>
 
+                        </div>
+                    </div>
+
+                    <div className="row mt-5 pb-5">
+                        <div className="col-12 col-md-6 order-last order-md-first">
+                            <h3 className="gradient-font">Midori Tamashiro</h3>
+                            <p>Midori Tamashiro is a professional with expertise in trilingual
+                                communication: Portuguese, Japanese, and English. With a solid background in
+                                international communication, she has extensive experience as a language instructor,
+                                translator, and interpreter.
+                                <br/>
+                                With experience as both a teacher and a translator, Midori combines linguistic
+                                proficiency with a passion for education and cross-cultural understanding. She has
+                                contributed to projects involving the translation of technical manuals and corporate
+                                documents, ensuring clarity and accuracy in multilingual contexts. As an interpreter,
+                                she excels in bridging language gaps, facilitating effective communication in
+                                professional settings.</p>
+                            <h5>Key Skills</h5>
+                            <ul>
+                                <li>Trilingual Proficiency: Portuguese, Japanese, and English</li>
+                                <li>Teaching Languages: English, Japanese, and Portuguese to students of all ages</li>
+                                <li>Translation of technical manuals, corporate documents, and professional communications</li>
+                                <li>Professional Interpretation (simultaneous and consecutive)</li>
+                                <li>Cross-Cultural Communication and Collaboration</li>
+                                <li>Educational Program Development</li>
+                            </ul>
+                            <small>Portuguese: Native/Fluent, Japanese: Native/Fluent, English: Fluent</small>
+                        </div>
+                        <div className="col-12 col-md order-first order-md-last">
+                            <div className="founder-img">
+                                <img src={CintiaImg} alt="Midori tamashiro"/>
+                            </div>
                         </div>
                     </div>
                 </div>
