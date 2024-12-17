@@ -219,21 +219,21 @@ const AboutPage = () => {
                         <div className="col-12 col-md">
                             <h3 className="gradient-font">Marcelo Hirata</h3>
                             <p>
-                                Professional with expertise in data analysis, multilingual communication, and technical
-                                translation, Marcelo combines strong analytical skills with a deep understanding of
-                                data-driven decision-making and cross-cultural environments. With extensive experience
-                                in data management, teaching, and public relations, he has contributed significantly to
-                                diverse industries, from automotive manufacturing to business communication solutions.
+                                Professional with expertise in data analysis, strategic communication, and business
+                                intelligence, Marcelo combines strong analytical skills with a deep understanding of
+                                data-informed decision-making and cross-cultural environments. With extensive experience
+                                in data and communications, he has contributed significantly to diverse industries, from
+                                automotive manufacturing to business communication solutions.
+
                             </p>
                             <h5>Key Skills</h5>
                             <ul>
-                                <li>Data Analysis and Quality Control</li>
-                                <li>Database Management and Data Formatting</li>
+                                <li>Data Analysis and Statistical Analysis</li>
+                                <li>Problem-solving critical thinking</li>
+                                <li>Data Visualization, Dashboard Development and Data Storytelling</li>
                                 <li>Public Relations and Communication System Optimization</li>
-                                <li>Teaching and Curriculum Development</li>
-                                <small>Python, Pandas Pynum, SQL, Tableau, Power BI, MS Project,
-                                    Spreadsheets,
-                                    Premiere Pro, Corel Draw</small>
+                                <small> Python, SQL, Tableau, Power BI, Jupyter Notebooks, Spreadsheets, Premiere Pro
+                                    AND MS Project.</small>
                             </ul>
 
                         </div>
@@ -257,7 +257,9 @@ const AboutPage = () => {
                             <ul>
                                 <li>Trilingual Proficiency: Portuguese, Japanese, and English</li>
                                 <li>Teaching Languages: English, Japanese, and Portuguese to students of all ages</li>
-                                <li>Translation of technical manuals, corporate documents, and professional communications</li>
+                                <li>Translation of technical manuals, corporate documents, and professional
+                                    communications
+                                </li>
                                 <li>Professional Interpretation (simultaneous and consecutive)</li>
                                 <li>Cross-Cultural Communication and Collaboration</li>
                                 <li>Educational Program Development</li>
