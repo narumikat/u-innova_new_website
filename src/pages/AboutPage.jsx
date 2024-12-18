@@ -201,7 +201,7 @@ const AboutPage = () => {
                             </ul>
                             <small>HTML, CSS, JavaScript, TypeScript, React.js, Next.js, React Native, Tailwind CSS,
                                 Figma,
-                                Bootstrap, PostgreSQL, PostgreSQL, MySQL, SQLite, Node.js, Ruby on rails</small>
+                                Bootstrap, PostgreSQL, MySQL, SQLite, Node.js, Ruby on rails</small>
                         </div>
                         <div className="col-12 col-md order-first order-md-last">
                             <div className="founder-img">
