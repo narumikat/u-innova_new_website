@@ -30,7 +30,7 @@ const Footer = () => {
                                 <ul className="list-unstyled li-space-lg p-small">
                                     <li>
                                         Important: <a href="terms.html">Terms & Conditions</a>,{' '}
-                                        <a href="privacy.html">Privacy Policy</a>
+                                        <a href="/privacy_policy">Privacy Policy</a>
                                     </li>
                                 </ul>
                             </div>
@@ -55,8 +55,8 @@ const Footer = () => {
                                 </span>
                                 <p>Contact Us</p>
                                 <p className="p-small" id="ContactUsFooter">
-                                    <a href="mailto:contact@u-innova.com">
-                                        <strong>contact@u-innova.com</strong>
+                                    <a href="mailto:u.innova.studio@gmail.com">
+                                        <strong>u.innova.studio@gmail.com</strong>
                                     </a>
                                 </p>
                             </div>
