@@ -3,7 +3,7 @@ import Footer from "../components/Footer.jsx";
 
 const PrivacyPolicy = () => {
     return (
-        <div>
+        <div className="py-4 mt-4">
             <NavBar/>
             <div className="privacy-policy-page py-4 my-4">
                 <div className="container py-5 my-4">

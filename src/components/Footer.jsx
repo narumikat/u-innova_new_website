@@ -29,7 +29,7 @@ const Footer = () => {
                                 <h6>Links</h6>
                                 <ul className="list-unstyled li-space-lg p-small">
                                     <li>
-                                        Important: <a href="terms.html">Terms & Conditions</a>,{' '}
+                                        Important: <a href="/terms_and_conditions">Terms & Conditions</a>,{' '}
                                         <a href="/privacy_policy">Privacy Policy</a>
                                     </li>
                                 </ul>
