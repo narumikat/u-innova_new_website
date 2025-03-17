@@ -1,3 +1,5 @@
+@use 'config/colors';
+
 .about-page {
 
   p {
@@ -10,7 +12,7 @@
   }
 
   small {
-    color: $p-color;
+    color: colors.$p-color;
   }
 
   .about-page-top {
@@ -84,7 +86,7 @@
     margin-top: 30px;
 
     li {
-      color: $p-color;
+      color: colors.$p-color;
       margin-bottom: 10px;
     }
   }
@@ -99,11 +101,11 @@
 
     .card {
       box-sizing: border-box;
-      background: $card-bg;
+      background: colors.$card-bg;
       position: relative;
       padding: 20px;
       border-radius: 15px;
-      border: 1px solid $card-border;
+      border: 1px solid colors.$card-border;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -112,7 +114,7 @@
       flex: 1;
 
       h5 {
-        color: $p-color;
+        color: colors.$p-color;
         text-align: center;
         margin-top: 30px;
         margin-bottom: 30px;
@@ -123,7 +125,7 @@
       }
 
       svg {
-        color: $p-color;
+        color: colors.$p-color;
         font-size: 2.5rem;
       }
 
@@ -141,7 +143,7 @@
     }
 
     h5 {
-      color: $light-purple;
+      color: colors.$light-purple;
       margin-bottom: 20px;
       margin-top: 30px;
     }

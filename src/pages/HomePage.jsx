@@ -5,6 +5,7 @@ import GridFeatures from "../components/GridFeatures.jsx";
 import WebsiteCreation from '../components/WebsiteCreation.jsx'
 import MissionBlock from "../components/MissionBlock.jsx";
 import CustomSwiper from "../components/CustomSwiper.jsx";
+import LogoSwiper from "../components/LogoSwiper.jsx"
 import AboutCards from "../components/AboutCard.jsx";
 import StartProject from "../components/StartProject.jsx";
 import Footer from "../components/Footer.jsx"
@@ -31,7 +32,8 @@ const HomePage = () => {
                 < GridFeatures/>
             </div>
             < MissionBlock/>
-            < CustomSwiper/>
+            {/*< CustomSwiper/>*/}
+            < LogoSwiper />
             < AboutCards/>
             < StartProject />
             < Footer/>

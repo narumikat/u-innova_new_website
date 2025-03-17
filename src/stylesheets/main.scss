@@ -1,14 +1,15 @@
-@import 'config/fonts';
-@import 'config/colors';
-@import 'home_page';
-@import 'components/buttons';
-@import 'components/carousel';
-@import 'components/about_card';
-@import 'components/footer';
-@import 'about_page';
+@use 'config/fonts';
+@use 'config/colors';
+@use 'home_page';
+@use 'components/buttons';
+@use 'components/carousel';
+@use 'components/about_card';
+@use 'components/footer';
+@use 'about_page';
+
 
 p, li {
-  color: $p-color;
+  color: colors.$p-color;
   font-size: 1.1rem;
 }
 

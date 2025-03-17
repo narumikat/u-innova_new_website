@@ -1,3 +1,5 @@
+@use 'config/colors';
+
 .home-top-bg {
   height: 100vh;
   background: linear-gradient(to right, #500e8e, #770b13);
@@ -131,7 +133,7 @@
 
   svg {
     margin-right: 1rem;
-    color: $middle-purple;
+    color: colors.$middle-purple;
     font-size: 1.2rem;
   }
 
@@ -150,9 +152,9 @@
     height: 100%;
     padding: 20px;
     box-sizing: border-box;
-    background: $card-bg;
+    background: colors.$card-bg;
     border-radius: 15px;
-    border: 1px solid $card-border;
+    border: 1px solid colors.$card-border;
     position: relative;
 
     .icon {
@@ -203,7 +205,7 @@
   }
 
   h2 {
-    color: $p-color;
+    color: colors.$p-color;
     font-size: 4rem;
   }
   span {
@@ -220,7 +222,7 @@
       background: linear-gradient(to bottom, transparent 80%, #0c0c0e 100%);
     }
     h2 {
-      color: $p-color;
+      color: colors.$p-color;
       font-size: 2.5rem;
     }
   }
@@ -258,7 +260,7 @@
   h5 {
     font-weight: 400;
     font-size: 1.5rem;
-    color: $p-color;
+    color: colors.$p-color;
     text-align: center;
   }
 }
@@ -273,10 +275,10 @@
   align-items: center;
 
   .project-card {
-    background: $card-bg;
+    background: colors.$card-bg;
     padding: 20px;
     border-radius: 15px;
-    border: 1px solid $card-border;
+    border: 1px solid colors.$card-border;
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -285,12 +287,12 @@
     padding-bottom: 30px;
 
     h3 {
-      color: $p-color;
+      color: colors.$p-color;
     }
 
     a {
       font-size: 14px;
-      background-color: $p-color;
+      background-color: colors.$p-color;
       transition: background-color 0.3s;
       &:hover {
         background-color: #fff;
