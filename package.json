@@ -7,10 +7,9 @@
     "dev": "vite",
     "lint": "eslint .",
     "heroku-postbuild": "npm run build",
-    "start": "vite preview --port $PORT --host 0.0.0.0",
+    "start": "serve -s dist -l $PORT",
     "build": "vite build",
-    "preview": "vite preview",
-    "postinstall": "npm run build"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@emotion/react": "^11.13.5",
