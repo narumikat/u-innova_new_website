@@ -1,4 +1,4 @@
-@use '../config/colors';
+@use "../config/colors";
 
 .carousel-container {
   padding-top: 5%;
@@ -41,12 +41,11 @@
     opacity: 1;
   }
 
-
   .carousel-card {
     padding: 20px;
-    background: #141414;
+    background: colors.$card-bg;
     border-radius: 15px;
-    border: 1px solid #212121;
+    border: 1px solid colors.$card-border;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -55,16 +54,15 @@
 
     &:hover {
       cursor: pointer;
-      box-shadow: 0 0 5px rgba(152, 18, 184, 0.8);
+      box-shadow: 0 0 5px rgba(152, 56, 244, 0.8);
     }
 
     h5 {
-      color: #fff;
+      color: colors.$p-color;
     }
   }
 
   @media (max-width: 640px) {
-
     .swiper-button-next,
     .swiper-button-prev {
       display: none;
@@ -120,12 +118,11 @@
     opacity: 1;
   }
 
-
   .carousel-card {
     padding: 30px;
-    background: #141414;
+    background: colors.$card-bg;
     border-radius: 32px;
-    border: 1px solid #212121;
+    border: 1px solid colors.$card-border;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,7 +132,7 @@
 
     &:hover {
       cursor: pointer;
-      box-shadow: 0 0 5px rgba(152, 18, 184, 0.8);
+      box-shadow: 0 0 5px rgba(152, 56, 244, 0.8);
     }
 
     img {
@@ -146,12 +143,11 @@
     }
 
     h5 {
-      color: #fff;
+      color: colors.$p-color;
     }
   }
 
   @media (max-width: 640px) {
-
     .swiper-button-next,
     .swiper-button-prev {
       display: none;

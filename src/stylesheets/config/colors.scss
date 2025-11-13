@@ -1,20 +1,28 @@
-$bg-color: #0c0c0e;
-$p-color: #bbbbbb;
+$bg-color: #fae0bd;
+$bg-color-end: #d6cbf3;
+$p-color: #575756;
 
 $light-purple: #9838f4;
 $middle-purple: #7c1dc9;
+$red: #c1272d;
 
-$card-bg: #141414;
-$card-border: #212121;
+$card-bg: #f2f3ee;
+$card-border: #e0e0e0;
 
 .gradient-font {
-  background: linear-gradient(90deg, #9838f4, #c1272d, #ffffff, #686770, #e6e6e6, #686770);
+  background: linear-gradient(90deg, #9838f4, #c1272d, #9838f4);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gradient-font2 {
-  background: linear-gradient(90deg, #ffffff, #686770, #e6e6e6);
+  background: linear-gradient(90deg, #c1272d, #9838f4, #c1272d);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.gradient-font-dark {
+  color: #ffffff;
 }

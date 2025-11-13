@@ -1,16 +1,23 @@
+@use "../config/colors";
+
 .card-container {
-  background: linear-gradient(to right, #500e8e, #770b13);
+  background: linear-gradient(to right, colors.$red, colors.$light-purple);
   position: relative;
   z-index: 0;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(ellipse, transparent 2%, #0c0c0e 75%, #0c0c0e 100%);
+    background: radial-gradient(
+      ellipse,
+      transparent 2%,
+      rgba(250, 224, 189, 0.6) 75%,
+      rgba(250, 224, 189, 0.8) 100%
+    );
     pointer-events: none;
   }
 
@@ -38,7 +45,7 @@
         overflow: hidden;
         cursor: pointer;
         position: relative;
-        color: #C1272D;
+        color: #c1272d;
         box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
 
         &:hover {
@@ -56,7 +63,8 @@
             color: #fff;
           }
 
-          p, a {
+          p,
+          a {
             opacity: 1;
             transition: opacity 0.3s 0.1s ease-in;
             color: #fff;
@@ -88,13 +96,13 @@
         }
       }
 
-      p, a {
+      p,
+      a {
         font-size: 16px;
         position: absolute;
         opacity: 0;
         max-width: 80%;
         transition: opacity 0.3s ease-out;
-
       }
 
       p {

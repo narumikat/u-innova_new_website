@@ -12,182 +12,194 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-    faFacebookF,
-    faInstagram,
-    faWhatsapp,
+  faFacebookF,
+  faInstagram,
+  faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import logo from "../assets/logo.svg";
 
 const customTheme = createTheme({
-    palette: {
-        primary: {
-            main: "#0c0c0e",
-        },
-        text: {
-            primary: "#bbbbbb",
-        },
+  palette: {
+    primary: {
+      main: "#f2f3ee",
     },
-    typography: {
-        fontSize: 10,
-        button: {
-            fontSize: 14,
-        },
+    text: {
+      primary: "#575756",
     },
+  },
+  typography: {
+    fontSize: 10,
+    button: {
+      fontSize: 14,
+    },
+  },
 });
 
 const pages = [
-    { name: "Home", href: "/" },
-    { name: "About Us", href: "/about" },
-    { name: "Portfolio", href: "/#portfolio" },
+  { name: "Home", href: "/" },
+  { name: "About Us", href: "/about" },
+  { name: "Portfolio", href: "/#portfolio" },
 ];
 
 const Navbar = () => {
-    const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorElNav, setAnchorElNav] = React.useState(null);
 
-    const handleOpenNavMenu = (event) => {
-        setAnchorElNav(event.currentTarget);
-    };
+  const handleOpenNavMenu = (event) => {
+    setAnchorElNav(event.currentTarget);
+  };
 
-    const handleCloseNavMenu = () => {
-        setAnchorElNav(null);
-    };
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
 
-    return (
-        <ThemeProvider theme={customTheme}>
-            <AppBar position="fixed">
-                <Container maxWidth="xl">
-                    <Toolbar disableGutters>
-                        {/* Logo */}
-                        <Box
-                            component="a"
-                            href="/"
-                            sx={{
-                                display: { xs: "none", md: "flex" },
-                                mr: 1,
-                                textDecoration: "none",
-                            }}
-                        >
-                            <img src={logo} alt="U-Innova Logo" style={{ height: 40 }} />
-                        </Box>
+  return (
+    <ThemeProvider theme={customTheme}>
+      <AppBar
+        position="fixed"
+        sx={{ backgroundColor: "rgba(242, 243, 238, 0.7)" }}
+      >
+        <Container maxWidth="xl">
+          <Toolbar disableGutters>
+            {/* Logo */}
+            <Box
+              component="a"
+              href="/"
+              sx={{
+                display: { xs: "none", md: "flex" },
+                mr: 1,
+                textDecoration: "none",
+              }}
+            >
+              <img src={logo} alt="U-Innova Logo" style={{ height: 40 }} />
+            </Box>
 
-                        <Typography
-                            variant="h6"
-                            noWrap
-                            component="a"
-                            href="/"
-                            sx={{
-                                mr: 2,
-                                display: { xs: "flex", md: "none" },
-                                flexGrow: 1,
-                                color: "text.primary",
-                                textDecoration: "none",
-                            }}
-                        >
-                            <img src={logo} alt="U-Innova Logo" style={{ height: 30 }} />
-                        </Typography>
+            <Typography
+              variant="h6"
+              noWrap
+              component="a"
+              href="/"
+              sx={{
+                mr: 2,
+                display: { xs: "flex", md: "none" },
+                flexGrow: 1,
+                color: "text.primary",
+                textDecoration: "none",
+              }}
+            >
+              <img src={logo} alt="U-Innova Logo" style={{ height: 30 }} />
+            </Typography>
 
-                        {/* Menu Mobile */}
-                        <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-                            <IconButton
-                                size="large"
-                                aria-label="open menu"
-                                aria-controls="menu-appbar"
-                                aria-haspopup="true"
-                                onClick={handleOpenNavMenu}
-                                sx={{ color: "text.primary" }}
-                            >
-                                <MenuIcon />
-                            </IconButton>
-                            <Menu
-                                id="menu-appbar"
-                                anchorEl={anchorElNav}
-                                anchorOrigin={{
-                                    vertical: "bottom",
-                                    horizontal: "left",
-                                }}
-                                keepMounted
-                                transformOrigin={{
-                                    vertical: "top",
-                                    horizontal: "left",
-                                }}
-                                open={Boolean(anchorElNav)}
-                                onClose={handleCloseNavMenu}
-                                sx={{ display: { xs: "block", md: "none" } }}
-                            >
-                                {/* Links */}
-                                {pages.map((page) => (
-                                    <MenuItem key={page.name} onClick={handleCloseNavMenu}>
-                                        <Typography
-                                            textAlign="center"
-                                            sx={{ color: "text.primary" }}
-                                            component="a"
-                                            href={page.href}
-                                            style={{ textDecoration: "none" }}
-                                        >
-                                            {page.name}
-                                        </Typography>
-                                    </MenuItem>
-                                ))}
-                            </Menu>
-                        </Box>
+            {/* Menu Mobile */}
+            <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+              <IconButton
+                size="large"
+                aria-label="open menu"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleOpenNavMenu}
+                sx={{ color: "text.primary" }}
+              >
+                <MenuIcon />
+              </IconButton>
+              <Menu
+                id="menu-appbar"
+                anchorEl={anchorElNav}
+                anchorOrigin={{
+                  vertical: "bottom",
+                  horizontal: "left",
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: "top",
+                  horizontal: "left",
+                }}
+                open={Boolean(anchorElNav)}
+                onClose={handleCloseNavMenu}
+                sx={{ display: { xs: "block", md: "none" } }}
+              >
+                {/* Links */}
+                {pages.map((page) => (
+                  <MenuItem key={page.name} onClick={handleCloseNavMenu}>
+                    <Typography
+                      textAlign="center"
+                      sx={{ color: "text.primary" }}
+                      component="a"
+                      href={page.href}
+                      style={{ textDecoration: "none" }}
+                    >
+                      {page.name}
+                    </Typography>
+                  </MenuItem>
+                ))}
+              </Menu>
+            </Box>
 
-                        {/* Menu Desktop + Ícones de Redes Sociais */}
-                        <Box
-                            sx={{
-                                flexGrow: 1,
-                                display: "flex",
-                                justifyContent: "flex-end",
-                                alignItems: "center",
-                            }}
-                        >
-                            {/* Links */}
-                            <Box sx={{ display: { xs: "none", md: "flex" }, mr: 2 }}>
-                                {pages.map((page) => (
-                                    <Button
-                                        key={page.name}
-                                        href={page.href}
-                                        onClick={handleCloseNavMenu}
-                                        sx={{
-                                            my: 2,
-                                            color: "text.primary",
-                                            display: "block",
-                                        }}
-                                    >
-                                        {page.name}
-                                    </Button>
-                                ))}
-                            </Box>
+            {/* Menu Desktop + Ícones de Redes Sociais */}
+            <Box
+              sx={{
+                flexGrow: 1,
+                display: "flex",
+                justifyContent: "flex-end",
+                alignItems: "center",
+              }}
+            >
+              {/* Links */}
+              <Box sx={{ display: { xs: "none", md: "flex" }, mr: 2 }}>
+                {pages.map((page) => (
+                  <Button
+                    key={page.name}
+                    href={page.href}
+                    onClick={handleCloseNavMenu}
+                    sx={{
+                      my: 2,
+                      color: "text.primary",
+                      display: "block",
+                    }}
+                  >
+                    {page.name}
+                  </Button>
+                ))}
+              </Box>
 
-                            {/* Ícones de Redes Sociais */}
-                            <Box sx={{ display: "flex", alignItems: "center" }}>
-                                <IconButton
-                                    href="https://www.facebook.com/uinnova.studio"
-                                    target="_blank"
-                                    sx={{ color: "text.primary" }}
-                                >
-                                    <FontAwesomeIcon icon={faFacebookF} style={{ fontSize: "24px" }} />
-                                </IconButton>
-                                <IconButton
-                                    href="https://www.instagram.com/uinnova_studio"
-                                    target="_blank"
-                                    sx={{ color: "text.primary" }}
-                                >
-                                    <FontAwesomeIcon icon={faInstagram} style={{ fontSize: "24px" }} />
-                                </IconButton>
-                                <IconButton
-                                    href="https://wa.me/+818066557091"
-                                    target="_blank"
-                                    sx={{ color: "text.primary" }}
-                                >
-                                    <FontAwesomeIcon icon={faWhatsapp} style={{ fontSize: "24px" }} />
-                                </IconButton>
-                            </Box>
-                        </Box>
-                    </Toolbar>
-                </Container>
-            </AppBar>
-        </ThemeProvider>
-    );
+              {/* Ícones de Redes Sociais */}
+              <Box sx={{ display: "flex", alignItems: "center" }}>
+                <IconButton
+                  href="https://www.facebook.com/uinnova.studio"
+                  target="_blank"
+                  sx={{ color: "text.primary" }}
+                >
+                  <FontAwesomeIcon
+                    icon={faFacebookF}
+                    style={{ fontSize: "24px" }}
+                  />
+                </IconButton>
+                <IconButton
+                  href="https://www.instagram.com/uinnova_studio"
+                  target="_blank"
+                  sx={{ color: "text.primary" }}
+                >
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    style={{ fontSize: "24px" }}
+                  />
+                </IconButton>
+                <IconButton
+                  href="https://wa.me/+818066557091"
+                  target="_blank"
+                  sx={{ color: "text.primary" }}
+                >
+                  <FontAwesomeIcon
+                    icon={faWhatsapp}
+                    style={{ fontSize: "24px" }}
+                  />
+                </IconButton>
+              </Box>
+            </Box>
+          </Toolbar>
+        </Container>
+      </AppBar>
+    </ThemeProvider>
+  );
 };
 
 export default Navbar;

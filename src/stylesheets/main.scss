@@ -1,18 +1,28 @@
-@use 'config/fonts';
-@use 'config/colors';
-@use 'home_page';
-@use 'components/buttons';
-@use 'components/carousel';
-@use 'components/about_card';
-@use 'components/footer';
-@use 'about_page';
+@use "config/fonts";
+@use "config/colors";
+@use "home_page";
+@use "components/buttons";
+@use "components/carousel";
+@use "components/about_card";
+@use "components/footer";
+@use "about_page";
 
-
-p, li {
+p,
+li {
   color: colors.$p-color;
   font-size: 1.1rem;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(
+    135deg,
+    colors.$bg-color 0%,
+    colors.$bg-color-end 100%
+  );
+  min-height: 100vh;
+  background-attachment: fixed;
 }
